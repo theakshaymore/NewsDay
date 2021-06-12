@@ -19,7 +19,7 @@ function NewsList() {
   useEffect(() => {
     const getArticles = async () => {
       const res = await axios.get(
-        "https://api.mediastack.com/v1/news?access_key=afff1cfc7ce195414d97373de781f663&countries=in"
+        "http://api.mediastack.com/v1/news?access_key=afff1cfc7ce195414d97373de781f663&countries=in"
       );
       setArticles(res.data.data);
       setLoading(false);
