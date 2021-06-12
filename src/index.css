@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap");
+
+/* Basic Styling */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.my-drop {
+  color: white;
+}
+
+/* ShowCase */
+.showcase {
+  margin-top: 50px;
+}
+
+.button {
+  background-color: #e53e3e;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button :hover {
+  color: white;
+}
+
+.my-img {
+  border-radius: 10px;
+}
+
+/* newslater */
+.newslater {
+  margin-top: 20px;
+}
+
+/* NewsItem */
+
+.card {
+  border: none;
+}
+.card-img {
+  border-radius: 5px;
+}
+
+.mycard-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Pagination */
+
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 5px;
 }
