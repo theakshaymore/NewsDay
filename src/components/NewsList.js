@@ -19,11 +19,11 @@ function NewsList() {
   useEffect(() => {
     const getArticles = async () => {
       const res = await axios.get(
-        "http://api.mediastack.com/v1/news?access_key=afff1cfc7ce195414d97373de781f663&countries=in"
+        "https://api.currentsapi.services/v1/latest-news?apiKey=GV6fiZfLNjlDQHSVyT7IHwRyoK_wYFQ-Di3cwVOwIGSbIaVP"
       );
-      setArticles(res.data.data);
+      setArticles(res.data.news);
       setLoading(false);
-      console.log(res.data.data);
+      console.log(res.data.news);
     };
     getArticles();
   }, []);
